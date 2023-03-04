@@ -15,15 +15,15 @@ header {
 }
 
 body {
-  background: linear-gradient(#ffffff, #eaecef);
+  background: linear-gradient(180deg, #f4f0f0, #fff);
 
-  animation: BackgrounMovment 10ms ease infinite;
+  animation: BackgrounMovment 50ms ease infinite;
 }
 
 .Contácto {
   display: flex;
   background: rgb(240, 240, 240);
-  justify-content: space-around;
+  justify-content: center;
   margin: 0px;
   font-size: 15px;
 
@@ -62,6 +62,8 @@ i:hover {
   background: rgb(240, 240, 240);
   justify-content: space-between;
   border: solid 2px rgb(193, 193, 193);
+  padding-left: 15px;
+  padding-right: 15px;
 
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -87,23 +89,39 @@ i:hover {
   float: left;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .MenuLinks a {
   color: black;
-  transition: all 250ms ease;
   margin: 10px;
+  transition: all 85ms ease;
   text-decoration: none;
 }
 
 .MenuLinks a:hover {
   font-size: 20px;
-  text-shadow: 0.1px 0.1px 20px #001b2b25;
-  color: #099eee;
+  color: white;
+  box-shadow: 0.1px 0.1px 20px #001b2b25;
+  background: #099eee;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
 }
 
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 0;
-  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
 }
 
 .contactanos {
@@ -119,17 +137,17 @@ h3 {
 .Servicios {
   display: block;
   text-align: center;
-  margin-top: 130px;
-  zindex: 10;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  zindex: 5;
   width: auto;
 }
 
 .serviceCards {
-  border-radius: 25px;
-
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 15px;
+  transition: all 250ms ease;
 }
 
 .serviceCards img {
@@ -142,32 +160,27 @@ h3 {
 
 .N1SC {
   display: inline-block;
-  border-radius: 25px;
-  transition: all 300ms ease;
-
+  transition: all 250ms ease;
   text-align: center;
   background-position: cover;
 }
 
 .N2SC {
+  transition: all 250ms ease;
   display: inline-block;
   text-align: center;
   background-position: cover;
-  border-radius: 25px;
-  transition: all 300ms ease;
 }
 
 .N3SC {
+  transition: all 250ms ease;
   display: inline-block;
   text-align: center;
-  border-radius: 25px;
-  transition: all 300ms ease;
   background-position: cover;
 }
 
 /* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
-  transition: all 250ms ease;
   width: 8px;
 }
 *::-webkit-scrollbar-track {
@@ -198,23 +211,22 @@ h3 {
   content: "Sevicio a Domicilio";
   background: #2a2a2a81;
   width: 250px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   height: 250px;
-  transition: all 550ms ease;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   display: flex;
   position: absolute;
+  transition: all 250ms ease;
   opacity: 0;
   backdrop-filter: blur(5px);
   color: #ffffff;
+  zindex: 10;
 }
 
 .numero1SeviceCard1:hover::before {
   opacity: 1;
   border-radius: 10px;
-  zindex: 100;
   cursor: default;
 }
 
@@ -224,22 +236,21 @@ h3 {
   width: 250px;
   height: 250px;
   backdrop-filter: blur(5px);
-  transition: all 550ms ease;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   display: flex;
   position: absolute;
+  transition: all 250ms ease;
   opacity: 0;
   color: #ffffff;
+  zindex: 10;
 }
 
 .numero2SeviceCard1:hover::before {
   opacity: 1;
   cursor: default;
   border-radius: 10px;
-  zindex: 100;
 }
 
 .numero3SeviceCard1::before {
@@ -247,15 +258,14 @@ h3 {
   background: #2a2a2a67;
   width: 250px;
   height: 250px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   zindex: 10;
   backdrop-filter: blur(5px);
-  transition: all 550ms ease;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   display: flex;
   position: absolute;
+  transition: all 250ms ease;
   opacity: 0;
   color: #ffffff;
 }
@@ -263,7 +273,6 @@ h3 {
 .numero3SeviceCard1:hover::before {
   opacity: 1;
   border-radius: 10px;
-
   cursor: default;
 }
 
@@ -271,15 +280,14 @@ h3 {
   content: "Sevicio a Domicilio";
   background: #2a2a2a81;
   width: 250px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   zindex: 10;
   height: 250px;
-  transition: all 550ms ease;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   display: flex;
   position: absolute;
+  transition: all 250ms ease;
   opacity: 0;
   backdrop-filter: blur(5px);
   color: #ffffff;
@@ -294,23 +302,22 @@ h3 {
   content: "Mantenimiento de congeladores";
   background: #2a2a2a81;
   width: 250px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   zindex: 10;
   height: 250px;
-  transition: all 550ms ease;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   display: flex;
   position: absolute;
+  transition: all 250ms ease;
   opacity: 0;
   backdrop-filter: blur(5px);
   color: #ffffff;
 }
 
 .numero1SeviceCard2:hover::before {
-  border-radius: 10px;
   opacity: 1;
+  border-radius: 10px;
   cursor: default;
 }
 
@@ -320,22 +327,21 @@ h3 {
   width: 250px;
   height: 250px;
   backdrop-filter: blur(5px);
-  transition: all 550ms ease;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   zindex: 10;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   display: flex;
   position: absolute;
+  transition: all 250ms ease;
   opacity: 0;
   color: #ffffff;
 }
 
 .numero2SeviceCard2:hover::before {
   opacity: 1;
-  border-radius: 10px;
   cursor: default;
+  border-radius: 10px;
 }
 
 .numero3SeviceCard2::before {
@@ -343,38 +349,36 @@ h3 {
   background: #2a2a2a67;
   width: 250px;
   height: 250px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   zindex: 10;
   backdrop-filter: blur(5px);
-  transition: all 550ms ease;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   display: flex;
   position: absolute;
+  transition: all 250ms ease;
   opacity: 0;
   color: #ffffff;
 }
 
 .numero3SeviceCard2:hover::before {
-  border-radius: 10px;
   opacity: 1;
   cursor: default;
+  border-radius: 10px;
 }
 
 .numero1SeviceCard3::before {
   content: "Servicio a aire de ventana";
   background: #2a2a2a81;
   width: 250px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   zindex: 10;
   height: 250px;
-  transition: all 550ms ease;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   display: flex;
   position: absolute;
+  transition: all 250ms ease;
   opacity: 0;
   backdrop-filter: blur(5px);
   color: #ffffff;
@@ -382,8 +386,8 @@ h3 {
 
 .numero1SeviceCard3:hover::before {
   opacity: 1;
-  border-radius: 10px;
   cursor: default;
+  border-radius: 10px;
 }
 
 .numero2SeviceCard3::before {
@@ -392,21 +396,20 @@ h3 {
   width: 250px;
   height: 250px;
   backdrop-filter: blur(5px);
-  transition: all 550ms ease;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   zindex: 10;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   display: flex;
   position: absolute;
+  transition: all 250ms ease;
   opacity: 0;
   color: #ffffff;
 }
 
 .numero2SeviceCard3:hover::before {
-  border-radius: 10px;
   opacity: 1;
+  border-radius: 10px;
   cursor: default;
 }
 
@@ -415,15 +418,14 @@ h3 {
   background: #2a2a2a67;
   width: 250px;
   height: 250px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  zindex: 100;
+  zindex: 10;
   backdrop-filter: blur(5px);
-  transition: all 550ms ease;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   display: flex;
   position: absolute;
+  transition: all 250ms ease;
   opacity: 0;
   color: #ffffff;
 }
@@ -434,10 +436,37 @@ h3 {
   cursor: default;
 }
 
+.Instrucciones {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10px;
+  padding: 15px;
+  color: #191919;
+}
+
+.Instrucciones h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 0px;
+  margin: 0px;
+}
+.Instrucciones h3 {
+  font-size: 19px;
+  padding: 10px;
+  margin: 0px;
+}
+
+.Instrucciones a {
+  text-decoration: none;
+  color: #191919;
+  font-weight: bold;
+}
+
 .ubicacion {
   text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
+  border-radius: 20px;
   transition: all 300ms ease;
 }
 
@@ -451,22 +480,25 @@ h3 {
 
 iframe {
   width: auto;
-  min-width: 850px;
+  min-width: 600px;
   padding-bottom: 20px;
-  min-height: 450px;
+  min-height: 400px;
   padding-top: 20px;
   height: auto;
+  transition: all 250ms ease;
   border-radius: 15px;
+  border: 2px solid rgb(193, 193, 193);
 }
 
 .mapaCerrado {
   transition: all 500ms ease;
   display: none;
+  border-radius: 25px;
 }
 
 .mapaAbierto {
   display: block;
-  transition: all 500ms ease;
+  border-radius: 25px;
 }
 
 @media (max-width: 1250px) {
@@ -474,17 +506,25 @@ iframe {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: rgb(240, 240, 240);
+    background: rgb(242, 242, 242);
     justify-content: space-between;
-  }
-
-  .Servicios {
-    margin-top: 200px;
+    margin: 0px;
+    padding: 0px;
   }
 
   .logo-title {
     display: block;
     text-align: center;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 150px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
 
   iframe {
@@ -506,6 +546,15 @@ iframe {
     display: flex;
     flex-direction: column;
     height: 200px;
+  }
+
+  .Contácto div {
+    border-top: 2px solid rgb(185, 185, 185);
+    border-left: 0px;
+    border-right: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid rgb(185, 185, 185);
   }
 }
 

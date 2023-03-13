@@ -1,72 +1,45 @@
-header {
-  background-size: auto;
-  width: auto;
-  position: fixed;
-  height: 20.4%;
-  min-width: 1250px;
-  max-width: 100%;
-  left: 50%;
-  transform: translate(-50%);
-  z-index: 50;
-  top: 0px;
-  background-repeat: no-repeat;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
 body {
-  background: linear-gradient(180deg, #f4f0f0, #fff);
-
-  animation: BackgrounMovment 50ms ease infinite;
+  width: 98vw;
+  height: 100vh;
+  background: #ffffff;
 }
 
-.Contácto {
+html {
+  scroll-behavior: smooth;
+  transition: all 10ms ease;
+}
+
+.info {
   display: flex;
-  background: rgb(240, 240, 240);
   justify-content: center;
-  margin: 0px;
-  font-size: 15px;
-
-  color: rgb(193, 193, 193);
+  width: auto;
   height: auto;
-
-  align-items: center;
-  border-bottom: solid 2px rgb(193, 193, 193);
-}
-
-.Contácto div {
-  border-left: 1px rgb(193, 193, 193) solid;
+  min-height: 450px;
+  min-width: 450px;
+  margin: 20px;
+  font-size: 15px;
+  color: #191919;
+  border: 3px solid #191919;
   padding: 10px;
-  border-right: 1px rgb(190, 190, 190) solid;
-}
-
-.Contácto a {
-  text-decoration: none;
-  color: rgb(193, 193, 193);
-}
-
-.Contácto {
-  border-top: 2px solid rgb(193, 193, 193);
-}
-i a:hover {
-  color: #099eee;
-}
-
-i:hover {
-  color: #0081c9;
+  border-radius: 5px;
 }
 
 .contenidoHeader {
   display: flex;
   align-items: center;
-  background: rgb(240, 240, 240);
+  width: auto;
+  min-width: 1100px;
+  min-width: 75vw;
+  background: rgb(245, 245, 245);
   justify-content: space-between;
-  border: solid 2px rgb(193, 193, 193);
-  padding-left: 15px;
-  padding-right: 15px;
-
+  border: 3px solid #191919;
+  z-index: 100;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  position: fixed;
+  padding: 10px 20px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .logo-title {
@@ -90,37 +63,39 @@ i:hover {
 }
 
 main {
+  display: grid;
+  place-items: center;
+}
+
+.MainContent {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .MenuLinks a {
   color: black;
   margin: 10px;
-  transition: all 85ms ease;
+  transition: all 215ms ease;
   text-decoration: none;
 }
 
 .MenuLinks a:hover {
   font-size: 20px;
-  color: white;
-  box-shadow: 0.1px 0.1px 20px #001b2b25;
-  background: #099eee;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  color: #191919;
+  background: #348ed8;
+  border: #191919 3px solid;
+  padding: 5px 15px;
   border-radius: 25px;
-  width: 100%;
-  height: 100%;
 }
 
 * {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   padding: 0px;
+
   margin: 0px;
 }
 
@@ -137,9 +112,9 @@ h3 {
 .Servicios {
   display: block;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 130px;
   margin-bottom: 10px;
-  zindex: 5;
+  z-index: 5;
   width: auto;
 }
 
@@ -162,21 +137,50 @@ h3 {
   display: inline-block;
   transition: all 250ms ease;
   text-align: center;
+  border-radius: 12px;
   background-position: cover;
+  width: auto;
+  height: auto;
 }
 
 .N2SC {
   transition: all 250ms ease;
   display: inline-block;
+  border-radius: 12px;
   text-align: center;
   background-position: cover;
 }
 
-.N3SC {
+.N1SC::before {
+  background: #2a2a2a81;
+  width: 250px;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  display: flex;
+  position: absolute;
   transition: all 250ms ease;
-  display: inline-block;
-  text-align: center;
-  background-position: cover;
+  opacity: 0;
+  backdrop-filter: blur(5px);
+  color: #ffffff;
+  z-index: 10;
+}
+
+.N2SC::before {
+  background: #2a2a2a81;
+  width: 250px;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  display: flex;
+  position: absolute;
+  transition: all 250ms ease;
+  opacity: 0;
+  backdrop-filter: blur(5px);
+  color: #ffffff;
+  z-index: 10;
 }
 
 /* Chrome, Edge and Safari */
@@ -208,239 +212,68 @@ h3 {
 }
 
 .numero1SeviceCard1::before {
-  content: "Sevicio a Domicilio";
-  background: #2a2a2a81;
-  width: 250px;
-  height: 250px;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  display: flex;
-  position: absolute;
-  transition: all 250ms ease;
-  opacity: 0;
-  backdrop-filter: blur(5px);
-  color: #ffffff;
-  zindex: 10;
+  content: "Mantenimiento y Servicio de Congeladores";
 }
 
 .numero1SeviceCard1:hover::before {
   opacity: 1;
   border-radius: 10px;
-  cursor: default;
 }
 
 .numero2SeviceCard1::before {
-  content: "Métodos de pago";
-  background: #2a2a2a67;
-  width: 250px;
-  height: 250px;
-  backdrop-filter: blur(5px);
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  display: flex;
-  position: absolute;
-  transition: all 250ms ease;
-  opacity: 0;
-  color: #ffffff;
-  zindex: 10;
+  content: "Servicio a neveras";
 }
 
 .numero2SeviceCard1:hover::before {
   opacity: 1;
-  cursor: default;
   border-radius: 10px;
 }
 
 .numero3SeviceCard1::before {
-  content: "Revisión y diagnóstico";
-  background: #2a2a2a67;
-  width: 250px;
-  height: 250px;
-  zindex: 10;
-  backdrop-filter: blur(5px);
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  display: flex;
-  position: absolute;
-  transition: all 250ms ease;
-  opacity: 0;
-  color: #ffffff;
+  content: "Servicio a lavadoras";
 }
 
 .numero3SeviceCard1:hover::before {
   opacity: 1;
   border-radius: 10px;
-  cursor: default;
-}
-
-.numero1SeviceCard1::before {
-  content: "Sevicio a Domicilio";
-  background: #2a2a2a81;
-  width: 250px;
-  zindex: 10;
-  height: 250px;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  display: flex;
-  position: absolute;
-  transition: all 250ms ease;
-  opacity: 0;
-  backdrop-filter: blur(5px);
-  color: #ffffff;
-}
-
-.numero1SeviceCard1:hover::before {
-  opacity: 1;
-  border-radius: 10px;
 }
 
 .numero1SeviceCard2::before {
-  content: "Mantenimiento de congeladores";
-  background: #2a2a2a81;
-  width: 250px;
-  zindex: 10;
-  height: 250px;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  display: flex;
-  position: absolute;
-  transition: all 250ms ease;
-  opacity: 0;
-  backdrop-filter: blur(5px);
-  color: #ffffff;
+  content: "Servicio a aire de ventana";
 }
 
 .numero1SeviceCard2:hover::before {
   opacity: 1;
   border-radius: 10px;
-  cursor: default;
 }
 
 .numero2SeviceCard2::before {
-  content: "Servicio a neveras";
-  background: #2a2a2a67;
-  width: 250px;
-  height: 250px;
-  backdrop-filter: blur(5px);
-  zindex: 10;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  display: flex;
-  position: absolute;
-  transition: all 250ms ease;
-  opacity: 0;
-  color: #ffffff;
+  content: "Servicio a aire acondicionado";
 }
 
 .numero2SeviceCard2:hover::before {
   opacity: 1;
-  cursor: default;
   border-radius: 10px;
 }
 
 .numero3SeviceCard2::before {
-  content: "servicio a lavadora";
-  background: #2a2a2a67;
-  width: 250px;
-  height: 250px;
-  zindex: 10;
-  backdrop-filter: blur(5px);
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  display: flex;
-  position: absolute;
-  transition: all 250ms ease;
-  opacity: 0;
-  color: #ffffff;
+  content: "Servicio a aire  automotriz";
 }
 
 .numero3SeviceCard2:hover::before {
   opacity: 1;
-  cursor: default;
   border-radius: 10px;
-}
-
-.numero1SeviceCard3::before {
-  content: "Servicio a aire de ventana";
-  background: #2a2a2a81;
-  width: 250px;
-  zindex: 10;
-  height: 250px;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  display: flex;
-  position: absolute;
-  transition: all 250ms ease;
-  opacity: 0;
-  backdrop-filter: blur(5px);
-  color: #ffffff;
-}
-
-.numero1SeviceCard3:hover::before {
-  opacity: 1;
-  cursor: default;
-  border-radius: 10px;
-}
-
-.numero2SeviceCard3::before {
-  content: "-----Horarios-----008:00am-05:00pm;-";
-  background: #2a2a2a67;
-  width: 250px;
-  height: 250px;
-  backdrop-filter: blur(5px);
-  zindex: 10;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  display: flex;
-  position: absolute;
-  transition: all 250ms ease;
-  opacity: 0;
-  color: #ffffff;
-}
-
-.numero2SeviceCard3:hover::before {
-  opacity: 1;
-  border-radius: 10px;
-  cursor: default;
-}
-
-.numero3SeviceCard3::before {
-  content: "servicio de aire automotriz";
-  background: #2a2a2a67;
-  width: 250px;
-  height: 250px;
-  zindex: 10;
-  backdrop-filter: blur(5px);
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  display: flex;
-  position: absolute;
-  transition: all 250ms ease;
-  opacity: 0;
-  color: #ffffff;
-}
-
-.numero3SeviceCard3:hover::before {
-  opacity: 1;
-  border-radius: 10px;
-  cursor: default;
 }
 
 .Instrucciones {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 10px;
   margin-bottom: 10px;
-  padding: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  width: 100%;
+
   color: #191919;
 }
 
@@ -448,18 +281,17 @@ h3 {
   font-size: 25px;
   text-transform: uppercase;
   padding: 0px;
-  margin: 0px;
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
 .Instrucciones h3 {
   font-size: 19px;
-  padding: 10px;
-  margin: 0px;
 }
 
 .Instrucciones a {
   text-decoration: none;
   color: #191919;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .ubicacion {
@@ -467,11 +299,9 @@ h3 {
   margin-top: 15px;
   margin-bottom: 15px;
   border-radius: 20px;
-  transition: all 300ms ease;
 }
 
 .ubicacion i {
-  transition: all 300ms ease;
 }
 
 .ubicacion i:hover {
@@ -485,13 +315,11 @@ iframe {
   min-height: 400px;
   padding-top: 20px;
   height: auto;
-  transition: all 250ms ease;
   border-radius: 15px;
   border: 2px solid rgb(193, 193, 193);
 }
 
 .mapaCerrado {
-  transition: all 500ms ease;
   display: none;
   border-radius: 25px;
 }
@@ -499,63 +327,6 @@ iframe {
 .mapaAbierto {
   display: block;
   border-radius: 25px;
-}
-
-@media (max-width: 1250px) {
-  .contenidoHeader {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background: rgb(242, 242, 242);
-    justify-content: space-between;
-    margin: 0px;
-    padding: 0px;
-  }
-
-  .logo-title {
-    display: block;
-    text-align: center;
-  }
-
-  main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 150px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-  }
-
-  iframe {
-    width: auto;
-    min-width: 325px;
-    padding-bottom: 10px;
-    min-height: 325px;
-    height: auto;
-  }
-
-  .ubicacion {
-    transition: all 5s ease;
-
-    margin-top: 10px;
-  }
-
-  .Contácto {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-  }
-
-  .Contácto div {
-    border-top: 2px solid rgb(185, 185, 185);
-    border-left: 0px;
-    border-right: 0px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-bottom: 2px solid rgb(185, 185, 185);
-  }
 }
 
 @keyframes BackgrounMovment {
@@ -572,13 +343,183 @@ iframe {
   }
 }
 
-footer {
+.MainContacto {
+  display: grid;
+  place-items: center;
+}
+
+.MainContacto > .contenido {
   display: flex;
-  margin: 0 auto;
-  justify-content: space-around;
-  position: fixed;
-  left: 50%;
   width: auto;
   height: auto;
-  min-width: 1250px;
+  min-height: 300px;
+  min-width: 800px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 15px;
+  background: rgb(245, 245, 245);
+  padding: 10px 40px;
+  margin-bottom: 50px;
+  border: 3px solid #191919;
+
+  margin-top: 25px;
+}
+
+form {
+  display: flex;
+  height: 80%;
+  flex-direction: column;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+form input {
+  padding: 5px;
+  overflow: 0;
+  border: 2px solid;
+  transition: all 250ms ease;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+form input::placeholder {
+  color: rgba(18, 2, 8, 0.406);
+}
+
+form input:focus {
+  outline: none;
+  border: 0px none transparent;
+  caret-color: #348ed8;
+  color: #348ed8;
+  border-radius: 3px;
+  background: #191919;
+  cursor: none;
+  border-bottom: 2px solid #348ed8;
+}
+
+form input:focus::placeholder {
+  color: transparent;
+}
+
+form button {
+  transition: all 250ms ease;
+  padding: 05px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  margin-top: 20px;
+}
+
+form button:hover {
+  color: #348ed8;
+  background: #ffffff;
+  border: 1px solid;
+  transform: scale(1.1);
+}
+
+.logosContacto {
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+
+.logosContacto a {
+}
+
+.logosContacto svg {
+  border: 1px solid #8c8c8c;
+  padding: 5px;
+  transition: all 500ms ease;
+  border-radius: 50%;
+  cursor: pointer;
+  fill: #8c8c8c;
+  margin: 10px 0px;
+  background: #ffffff;
+}
+
+.logosContacto svg:hover {
+  border: 1px solid #191919;
+  padding: 5px;
+  background: #348ed8;
+  fill: #191919;
+  animation: hover 1s ease infinite;
+}
+
+@keyframes hover {
+  0%,
+  100% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1200px) {
+  .contenidoHeader {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    z-index: 100;
+    min-width: 100vw;
+  }
+
+  .MainContent {
+    width: auto;
+  }
+
+  .logo-title {
+    display: block;
+    text-align: center;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  iframe {
+    width: auto;
+    min-width: 325px;
+    padding-bottom: 10px;
+    min-height: 325px;
+    height: auto;
+  }
+
+  .ubicacion {
+    margin-top: 10px;
+  }
+
+  .Servicios {
+    margin-top: 220px;
+  }
+
+  .MainContacto {
+    margin-bottom: 20px;
+  }
+
+  .MainContacto > .contenido {
+    width: auto;
+    height: auto;
+    min-height: 400px;
+    min-width: 300px;
+    flex-direction: column;
+  }
+
+  form button {
+    border: 0px;
+    padding: 05px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .logosContacto {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

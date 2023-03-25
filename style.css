@@ -198,8 +198,7 @@ body {
 }
 
 .icon-close:hover{
-  background-color:#7C7C7C;
-  color: #191919;
+  background-color:#343434;  color: #fff;
 }
 
 .contenidoWrapper h2{

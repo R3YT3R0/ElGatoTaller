@@ -600,12 +600,12 @@ left: 8px;
     margin-bottom: 10px;
   }
 
-  .MainContent{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-45%);
-  }
+.MainContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%,-45%);
+}
   
   .SeviciosA{
     display: none;

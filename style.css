@@ -135,25 +135,6 @@ body {
   min-width: 40vw;
   max-height:content;
   outline: none;
-
-}
-
-
-
-
-
-@keyframes animate {
-    0%{
-      background-position: 0% 50%;
-    }
-    50%{
-      background-position:100% 50%;
-
-    }
-    100%{
-      background-position: 0% 50%;
-
-    }
 }
 
 .contenidoWrapper{
@@ -177,30 +158,47 @@ body {
   min-height: 100%;
 }
 
+@keyframes animate {
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position:100% 50%;
 
-.icon-close {
-  padding: 10PX; 
-  box-shadow: 0 0 10px #191919;
-  border: 2px solid #191919;
+    }
+    100%{
+      background-position: 0% 50%;
+
+    }
+}
+
+.icon-close{
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 0;
   border-radius: 10px;
-  margin: 10PX;
-  width: 125px;
-  transition: all 250ms ease;
-  font-weight: 1500;
-  z-index: 1100;
-  font-size: 1.4em;
-
+  color: black;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #191919;
+  transition: 250ms;
+  
 }
 
 .icon-close:hover{
-  color: black;
-  background:#348ed8;
+  background:#348ed820 ;
+  box-shadow: 0 0 2px black;
 }
 
 .contenidoWrapper h2{
   font-size: 1.5em;
   margin: 0px;
-  padding-top: 20px;
+  padding:15px 15px;
 }
 
 .contenidoWrapper .form-box .input-box {
@@ -213,7 +211,7 @@ body {
 
 .Label{
   position: absolute;
-  margin-top: 5%;
+  margin-top: 3%;
 left: 8px;
   transform: translateY(-50%);
   font-size: 1em;
@@ -337,27 +335,9 @@ left: 8px;
   -webkit-background-clip: text;
   animation:BackgrounMovment 5s linear infinite ;
   background-size: 150% 150%;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.265);
 }
 
-.contenidoHeader h1::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background:linear-gradient(to right, #00a2ff,#348ed8,#0081c9,#00a6ff,#099eee,#00a2ff);
-  border-radius: 5px;
-  left: 20;
-  transform-origin: center;
-  bottom: 40px;
-  width: 20.5ch;
-  transform: scaleX(0);
-  transition: transform 0.1s;
-}
-
-.contenidoHeader h1:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
 
 .MainContent{
   display: flex;
@@ -621,22 +601,32 @@ left: 8px;
   }
 
   .MainContent{
-    margin-top:250px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-45%);
   }
   
+  .SeviciosA{
+    display: none;
+  }
   
+  .InicioA{
+    display: none;
+  }
+
   .Difuminado{
       left: 0;
     }
 
     .box{
-  min-width: 80vw;
+  min-width: 90vw;
 
     }
     
     #mapa > iframe{
       min-width: 60vw;
-      min-height: 50vh;
+      min-height: 60vw;
     }
 
     .socialLinks{
@@ -647,9 +637,7 @@ left: 8px;
       flex-direction: column;
       margin-top: 0;
       padding: 0;
-    }
-    
-    
+  }  
   }
   *::-webkit-scrollbar {
     width: 10px;
@@ -674,4 +662,4 @@ left: 8px;
     margin: 10px;
     border-right: transparent;
     border-top: transparent;
-  }
+}

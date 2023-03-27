@@ -5,7 +5,6 @@
   box-sizing: border-box;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-weight: 200;
   padding: 0px;
 }
 
@@ -513,8 +512,7 @@ body {
 
 .ubicacion {
   height: auto;
-  margin: 20px 0;
-
+  margin: 30px 0;
 }
 
 #mapa iframe {
@@ -597,16 +595,21 @@ body {
   }
 
   .Instrucciones h2 {
-    font-size: 4vw;
+    font-size: 3em;
     margin-top: 15px;
   }
 
   .Instrucciones h3 {
-    font-size: 3vw;
+    font-size: 2.5em;
+
   }
 
   .Servicio h2 {
     padding: 25px 0px;
+  }
+
+  .ubicacion {
+    font-size: 2.5em
   }
 
   summary {
@@ -627,7 +630,7 @@ body {
   }
 
   .Servicio h2 {
-    font-size: 2.8em;
+    font-size: 3em;
   }
 
   .navigation button {

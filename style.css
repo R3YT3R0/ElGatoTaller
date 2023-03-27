@@ -513,8 +513,7 @@ body {
 
 .ubicacion {
   height: auto;
-  margin: 30px 0;
-  font-size: 20px;
+  margin: 20px 0;
 
 }
 
@@ -628,7 +627,7 @@ body {
   }
 
   .Servicio h2 {
-    font-size: 3em;
+    font-size: 2.8em;
   }
 
   .navigation button {

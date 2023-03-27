@@ -1,4 +1,18 @@
 
+/* Codigo js Login page */
+/* var loginLink = document.querySelector(".login-link");
+var wrapper = document.querySelector(".wrapper");
+var registerLink = document.querySelector(".register-link");
+
+registerLink.addEventListener("click", () => {
+  wrapper.classList.add("active");
+});
+
+loginLink.addEventListener("click", () => {
+  wrapper.classList.remove("active");
+});
+*/
+
 
 var wrapper = document.querySelector(".wrapper");
 
@@ -30,4 +44,3 @@ function menuDesplegable() {
     menu.classList.remove("mapaAbierto")
   }
 }
-

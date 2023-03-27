@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 * {
@@ -346,7 +350,6 @@ body {
   -webkit-background-clip: text;
   animation: BackgrounMovment 5s linear infinite;
   background-size: 150% 150%;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.265);
 }
 
 
@@ -354,7 +357,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 0 auto;
-  margin-top: 150px;
+  margin-top: 125px;
   justify-content: center;
   align-items: center;
 }
@@ -371,19 +374,18 @@ body {
 .Instrucciones h2 {
   font-size: 25px;
   text-transform: uppercase;
-  padding: 0px;
+  padding: 10px 10px;
   margin: 0 auto;
-  padding-bottom: 10px;
   transition: all .5s ease;
-  width: 13ch;
+  width: auto;
 }
 
 
-.Instrucciones h3 {
-  font-size: 19px;
+.Instrucciones p {
+  font-size: 18px;
 }
 
-.Instrucciones h3>a {
+.Instrucciones p>a {
   text-decoration: none;
   color: #191919;
 
@@ -514,6 +516,8 @@ body {
   height: auto;
   margin: 30px 0;
 }
+
+
 
 #mapa iframe {
   width: auto;
